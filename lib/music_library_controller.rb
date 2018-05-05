@@ -73,7 +73,7 @@ class MusicLibraryController
     end
   end
   
-def play_song
+  def play_song
     puts "Which song number would you like to play?"
     user = gets.strip
     if user.to_i.between?(1, Song.all.length)
